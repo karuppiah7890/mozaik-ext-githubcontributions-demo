@@ -1,0 +1,23 @@
+{
+  "name": "mozaik-ext-githubcontributions-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf build dist; parcel build index.html -d build",
+    "start": "npm run build; node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mozaik/server": "^2.0.0-alpha.7",
+    "@mozaik/themes": "^1.0.0-alpha.17",
+    "@mozaik/ui": "^2.0.0-rc.2",
+    "dotenv": "^8.0.0",
+    "mozaik-ext-githubcontributions": "file:../mozaik-ext-githubcontributions",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

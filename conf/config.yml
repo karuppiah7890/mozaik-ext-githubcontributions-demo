@@ -1,0 +1,23 @@
+port: 5000
+
+# define duration between each dashboard rotation (seconds)
+rotationDuration: 10
+apis:
+  # define the global interval used by Mozaïk Bus to call registered APIs in ms
+  pollInterval: 3600000 # one hour
+
+extension:   &extension githubcontributions
+
+dashboards:
+- title:   GitHub Contributions Dashboard
+  columns: 1
+  rows:    1
+  widgets:
+  - extension:    *extension
+    widget:       UsersContributions
+    usernames:
+    - karuppiah7890
+    columns:      1
+    rows:         1
+    x:            0
+    y:            0
